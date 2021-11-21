@@ -1,15 +1,22 @@
 import java.util.regex.*;
 public class ExpresionRegular {
-    private Pattern p;
-    private Matcher m;
-    public boolean verificar(String a, String er) {
+    private static Pattern p;
+    private static Matcher m;
+    public static boolean verificar(String a, String er) {
         Pattern p = Pattern.compile(er);
         Matcher m = p.matcher(a);
         return m.matches();
     }
-    public boolean verificarTokens(String a,final String b) {
-        p = Pattern.compile("^"+b);
+    public static boolean verificarTokens(String a,final String b) {
+        p = Pattern.compile(".*"+b+".*");
         m = p.matcher(a.toUpperCase());
+        return m.matches();
+    }
+    
+
+    public boolean extensionPosible(String a) {
+        p = Pattern.compile(".*");
+        m = p.matcher(a);
         return m.matches();
     }
 }
