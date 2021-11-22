@@ -4,4 +4,6 @@ comment1.params=a\ er
 comment1.target=boolean\ verificar(java.lang.String,\ java.lang.String)
 comment2.params=a\ b
 comment2.target=boolean\ verificarTokens(java.lang.String,\ java.lang.String)
-numComments=3
+comment3.params=a
+comment3.target=boolean\ extensionPosible(java.lang.String)
+numComments=4

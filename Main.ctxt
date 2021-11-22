@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\n\ debemos\ ser\ capaces\ de\ almacenar\ lo\ que\ tiene\ que\ ver\ con\n\ en\ caso\ del\ almacenamiento\ debemos\ poder\ guardar\ comandos?\n\ o\ debemos\ mapear\ los\ comandos\ \n\ \n
+comment1.params=path
+comment1.target=Main(java.lang.String)
+comment2.params=TOKEN\ nombreCod
+comment2.target=void\ agregarTokens(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=void\ buscarTokens()
+comment4.params=
+comment4.target=void\ cargarLenguaje()
+comment5.params=id
+comment5.target=void\ ejecutar(java.lang.String)
+numComments=6

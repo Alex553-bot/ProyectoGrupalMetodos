@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Serializador
+comment0.text=\n\ tenemos\ que\ tener\ en\ cuenta\ los\ siguienets\ aspectos\:\n\ 1.\ dado\ un\ tipo\ de\ lista\ podamos\ almacenarla\n\ 2.\ un\ archivo\ guardado\ debe\ poder\ abrise\ y\ compilar\ las\ clases\ \n\ PARA\ EL\ USO\ DE\ LA\ SERIALIZACION\ LA\ CLASE\ SERIALIZABLE\ DEBE\ SER\ DE\ TIPO\ SERIALIZABLE.\n\ OTRO\ POSIBLE\ CASO\ ES\ CREAR\ UN\ CLASE\ DATOS\ DE\ TIPO\ CONTENEDORA\ O\ ENVOLTORIA\ QUE\ EXTIENDA\ LA\ CLASE\ SERIALIZABLE\n\ Todos\ los\ atributos\ deben\ ser\ serializables\!\!\ \n
+comment1.params=path\ o
+comment1.target=void\ serializar(java.lang.String,\ java.io.Serializable)
+comment2.params=path
+comment2.target=java.util.ArrayList\ recuperar(java.lang.String)
+comment3.params=path
+comment3.target=void\ openOutput(java.lang.String)
+comment4.params=path
+comment4.target=void\ openInput(java.lang.String)
+comment5.params=
+comment5.target=void\ closeOutput()
+comment6.params=
+comment6.target=void\ closeInput()
+numComments=7

@@ -1,0 +1,24 @@
+#JSGF V1.0;
+grammar sentence;
+
+public <sentence> = 
+[<dato0>]
+[<dato1>]
+[<dato3>]
+[<dato2>]
+[<dato2>]
+[<dato2>]
+[<dato2>]
+;
+
+
+
+
+
+<dato0> = Cerrar;
+<dato1>=COAMDN;
+<dato3>=COM;
+<dato2>=EEE;
+<dato2>=FADSKF;
+<dato2>=FADSKF;
+<dato2>=FADSKF;

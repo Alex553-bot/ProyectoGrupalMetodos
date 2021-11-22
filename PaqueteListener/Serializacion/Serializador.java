@@ -1,3 +1,5 @@
+package PaqueteListener.Serializacion;
+
 import java.io.*;
 
 import java.util.ArrayList;
@@ -13,45 +15,45 @@ import java.util.List;
  * */
 // .ser .bin .txt?
 //transforma a un flujo de bytes
-public class Serializador {
+public class Serializador<E extends Serializable> {
     private FileOutputStream  outputFile;
     private FileInputStream  inputFile;
     private ObjectOutputStream output;
     private ObjectInputStream input;
 
-    public void serializar(String path, TOKEN tok) {
+    public void serializar(String path, E o) {
         try {
             File f = new File(path);
             if (f.length()==0) {
                 openOutput(path);
-                output.writeObject(tok);
+                output.writeObject(o);
                 closeOutput();
             } else {
                 FileOutputStream outputFile = new FileOutputStream(path, true);
                 MyObjectOutputStream miOb = new MyObjectOutputStream(outputFile);
-                miOb.writeObject(tok);
+                miOb.writeObject(o);
                 miOb.close();
             }
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
     }
-    public ArrayList<TOKEN> read(String path) {
-        TOKEN d = null;
-        ArrayList<TOKEN> lista = new ArrayList<>();
+    public ArrayList<E> recuperar(String path) {
+        Object d = null;
+        ArrayList<E> lista = new ArrayList<>();
         try {
             if (output!=null) {
                 openInput(path);
                 do {
-                    d = (TOKEN)input.readObject();
-                    lista.add(d);
+                    d = (Object)input.readObject();
+                    lista.add((E)d);
                 }while(d!=null);
             }
         } catch (IOException ioe) {
-            
+            //ioe.printStackTrace();
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
-        }
+        } 
         return lista;
     }
 
@@ -72,11 +74,12 @@ public class Serializador {
     private void closeInput() throws IOException {
         if (input!=null) input.close();
     }
+    
 }
 
 class MyObjectOutputStream extends ObjectOutputStream {
     public MyObjectOutputStream(OutputStream out) 
-    	throws IOException
+        throws IOException
     {
         super(out);
     }

@@ -1,3 +1,4 @@
+//package Paquete;  
 // clase en duda
 import java.io.IOException;
 public class Hilo extends Thread{

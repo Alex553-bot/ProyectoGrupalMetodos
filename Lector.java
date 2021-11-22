@@ -6,7 +6,10 @@ import java.io.IOException;
 import java.io.File;
 import java.io.PrintWriter;
 import java.io.FileWriter;
+//import Serializacion.Serializador;
 
+
+// clase en duda de su uso
 import java.util.ArrayList;
 // esta clase debe identificar todos los comandos de un proyecto por lo que 
 // es muy importante 
@@ -24,39 +27,6 @@ public class Lector {
         // y devolverlo ya convertidos para poder trabajar con ellos 
         return null;
     }
-    public String[] ejecutar(String lengNatural) {
-        String tokens[] = parser.capturar(lengNatural, tokensEncontrados);
-        String[] res = new String[tokens.length];
-        if(tokens.length>0) {
-            for (int i = 0; i<tokens.length;i++) {
-                String aux=ejecutarCodigoPorComandoUnico(tokens[i]);
-                if(aux!="\0")    
-                    res[i]=aux;
-            }
-        }
-        return res;
-    }
-
-    /*private String ejecutarCodigoPorComandoUnico(String token) {
-        String res = capturarCodigo(token);
-        String[] aux = res.split("#");
-        modificarHilo(aux[0], 5);
-        try {
-            Process p = 
-            Runtime.getRuntime().exec("cd $(CURRENT_DIRECTORY) & javac $(FILE_NAME) & java $(NAME_PART) & pause");
-        } catch (java.io.IOException ioe) {
-            ioe.printStackTrace();
-        }
-        Hilo a = new Hilo();
-        a.run();
-        while(true) {
-            if(!a.isAlive()) {
-                limpiarHilo();
-                break;
-            }
-        }
-        return aux[0];
-    }*/
 
     private String capturarCodigo(String p) {
         String res = "";
@@ -65,7 +35,7 @@ public class Lector {
             BufferedReader br = new BufferedReader(r);
             String l = br.readLine();
             while(l!=null) {
-                String aux[] = parser.capturar(l);
+                String aux[] = parser.capturar(l, null);
                 if (p.toUpperCase().equals(aux[0])) {
                     while(verificador.verificar(l, "#$")) {
                         l = br.readLine();
@@ -84,7 +54,7 @@ public class Lector {
     public void recuperarTokens() {
         try {
             File tokenFile = new File("comandosEjecutables.txt");
-            if (tokenFile.length==0) {
+            if (tokenFile.length()==0) {
                 return;
             }
             FileReader fr = new FileReader(tokenFile);
