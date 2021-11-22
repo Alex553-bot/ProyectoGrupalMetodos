@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Normalizador
+comment1.params=cad
+comment1.target=java.lang.String\ normalizar(java.lang.String)
+comment2.params=cad
+comment2.target=boolean\ verificar(java.lang.String)
+numComments=3

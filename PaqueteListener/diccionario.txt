@@ -1,0 +1,7 @@
+#JSGF V1.0;
+grammar sentence;
+
+public <sentence> = 
+[<dato0>]
+;
+<dato0> = Cerrar;
