@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Microfono
+comment1.params=main
+comment1.target=void\ crear(Main)
+comment2.params=re
+comment2.target=void\ resultAccepted(javax.speech.recognition.ResultEvent)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

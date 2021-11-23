@@ -2,5 +2,5 @@
 comment0.target=Hilo
 comment1.params=comandos
 comment1.target=void\ run(java.lang.String[])
-comment1.text=\n\ The\ java.lang.Runtime.exec(String\ command)\ method\ executes\ the\ specified\ \n\ string\ command\ in\ a\ separate\ process.\ \n\ This\ is\ a\ convenience\ method.\ \n\ An\ invocation\ of\ the\ form\ exec(command)\ behaves\ in\ exactly\ \n\ the\ same\ way\ as\ the\ invocation\ exec(command,\ null,\ null).\n
+comment1.text=\r\n\ The\ java.lang.Runtime.exec(String\ command)\ method\ executes\ the\ specified\ \r\n\ string\ command\ in\ a\ separate\ process.\ \r\n\ This\ is\ a\ convenience\ method.\ \r\n\ An\ invocation\ of\ the\ form\ exec(command)\ behaves\ in\ exactly\ \r\n\ the\ same\ way\ as\ the\ invocation\ exec(command,\ null,\ null).\r\n
 numComments=2

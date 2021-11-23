@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Serializador
-comment0.text=\n\ tenemos\ que\ tener\ en\ cuenta\ los\ siguienets\ aspectos\:\n\ 1.\ dado\ un\ tipo\ de\ lista\ podamos\ almacenarla\n\ 2.\ un\ archivo\ guardado\ debe\ poder\ abrise\ y\ compilar\ las\ clases\ \n\ PARA\ EL\ USO\ DE\ LA\ SERIALIZACION\ LA\ CLASE\ SERIALIZABLE\ DEBE\ SER\ DE\ TIPO\ SERIALIZABLE.\n\ OTRO\ POSIBLE\ CASO\ ES\ CREAR\ UN\ CLASE\ DATOS\ DE\ TIPO\ CONTENEDORA\ O\ ENVOLTORIA\ QUE\ EXTIENDA\ LA\ CLASE\ SERIALIZABLE\n\ Todos\ los\ atributos\ deben\ ser\ serializables\!\!\ \n
+comment0.text=\r\n\ tenemos\ que\ tener\ en\ cuenta\ los\ siguienets\ aspectos\:\r\n\ 1.\ dado\ un\ tipo\ de\ lista\ podamos\ almacenarla\r\n\ 2.\ un\ archivo\ guardado\ debe\ poder\ abrise\ y\ compilar\ las\ clases\ \r\n\ PARA\ EL\ USO\ DE\ LA\ SERIALIZACION\ LA\ CLASE\ SERIALIZABLE\ DEBE\ SER\ DE\ TIPO\ SERIALIZABLE.\r\n\ OTRO\ POSIBLE\ CASO\ ES\ CREAR\ UN\ CLASE\ DATOS\ DE\ TIPO\ CONTENEDORA\ O\ ENVOLTORIA\ QUE\ EXTIENDA\ LA\ CLASE\ SERIALIZABLE\r\n\ Todos\ los\ atributos\ deben\ ser\ serializables\!\!\ \r\n
 comment1.params=path\ o
 comment1.target=void\ serializar(java.lang.String,\ java.util.ArrayList)
 comment2.params=path

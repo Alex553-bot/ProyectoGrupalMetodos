@@ -2,7 +2,6 @@ package PaqueteListener;
 
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.io.Serializable;
 import PaqueteListener.Normalizacion.*;
 
@@ -62,13 +61,5 @@ class Token implements Serializable {
         if (Normalizador.verificar(id))
             throw new Exception("nombre invalido");
         identificador = Normalizador.normalizar(id);
-    }
-    
-    @Override
-    public String toString() {
-        String res = "";
-        for (String e: ejecutables)
-            res += e + "    ";
-        return identificador + "\n"+res;
     }
 }
