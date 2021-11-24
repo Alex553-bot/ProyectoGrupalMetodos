@@ -1,0 +1,11 @@
+#JSGF V1.0;
+grammar sentence;
+
+public <sentence> = 
+[<dato0>]
+[<dato1>]
+[<dato2>]
+;
+<dato0> = CERRAR;
+<dato1>=TERMINAL;
+<dato2>=NOTAS;

@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=path
+comment1.target=Main(java.lang.String)
+comment10.params=path
+comment10.target=void\ guardarTokens(java.lang.String)
+comment2.params=
+comment2.target=Main()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=
+comment4.target=void\ main1()
+comment5.params=cadena
+comment5.target=java.lang.String[]\ capturarComandos(java.lang.String)
+comment6.params=id\ ejecuciones
+comment6.target=void\ agregarComando(java.lang.String,\ java.lang.String[])
+comment7.params=path
+comment7.target=void\ cargarTokens(java.lang.String)
+comment8.params=id
+comment8.target=void\ ejecutar(java.lang.String)
+comment9.params=tok
+comment9.target=void\ guardarDiccionario(Token)
+numComments=11
