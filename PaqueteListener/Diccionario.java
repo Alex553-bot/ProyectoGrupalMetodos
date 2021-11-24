@@ -63,7 +63,11 @@ class Diccionario {
             diccionario = new File("diccionario.txt");
             String aux = "#JSGF V1.0;\ngrammar sentence;\n\n";
             aux += "public <sentence> = \n[<dato0>]\n;\n";
+<<<<<<< HEAD
             aux += "<dato0> = CERRAR;";
+=======
+            aux += "<dato0> = Cerrar;";
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
             FileWriter fr = new FileWriter(diccionario, false);
             fr.write(aux);
             fr.close();

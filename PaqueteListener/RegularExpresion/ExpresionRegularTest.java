@@ -47,10 +47,13 @@ public class ExpresionRegularTest
         String token = "EL";
         assertTrue(ExpresionRegular.verificarTokens(a, token));
     }
+<<<<<<< HEAD
     @Test
     public void test2() {
         String a = "una";
         String token = "una";
         assertTrue(ExpresionRegular.verificarTokens(a,token));
     }
+=======
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 }

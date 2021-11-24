@@ -9,6 +9,12 @@ public class Microfono extends ResultAdapter {
     static Main m;
     static Recognizer recognizer;
     String gst;
+<<<<<<< HEAD
+=======
+    public static void crear(Main main) {
+        m = main;
+    }
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
     // el archivo de guardado de comandos debe estar dentro de la libreria
     @Override
     public void resultAccepted(ResultEvent re) {
@@ -22,11 +28,16 @@ public class Microfono extends ResultAdapter {
                 args[0]+=gst+" ";
                 System.out.println(args[0]+" ");
             }
+<<<<<<< HEAD
             if(gst.equals("CERRAR")) {
                 // limpia el reconocedor y libera lso recursos utilizados
                 recognizer.deallocate();
                 System.exit(0);
                 System.out.println("Termino Microfono");
+=======
+            if(gst.equals("Cerrar")) {
+                recognizer.deallocate();
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
             }
             String [] aux = m.capturarComandos(args[0]);
             for (String exe: aux) {
@@ -40,6 +51,7 @@ public class Microfono extends ResultAdapter {
 
     public static void main(String args[]) {
         try {
+<<<<<<< HEAD
             m = new Main();
             Diccionario.crearDiccionario();
             m.agregarComando("Terminal", new String[]{"cmd", "/c", "start cmd.exe"});
@@ -52,6 +64,11 @@ public class Microfono extends ResultAdapter {
             // asigna los recursos necesarios
             recognizer.allocate();
             // es de tipo JSGF 
+=======
+            recognizer = Central.createRecognizer(new EngineModeDesc(Locale.ROOT));
+            recognizer.allocate();
+
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
             FileReader grammar1 =new FileReader("diccionario.txt");
 
             RuleGrammar rg = recognizer.loadJSGF(grammar1);
@@ -61,7 +78,11 @@ public class Microfono extends ResultAdapter {
 
             System.out.println("Empieze Dictado");
             recognizer.commitChanges();
+<<<<<<< HEAD
             // pide al reconocedor ponerlo estado resumido para poder reconocer las palabras
+=======
+
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
             recognizer.requestFocus();
             recognizer.resume();
         } catch (Exception e) {
@@ -70,4 +91,8 @@ public class Microfono extends ResultAdapter {
             System.exit(0);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702

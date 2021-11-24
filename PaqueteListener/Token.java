@@ -10,7 +10,11 @@ class Token implements Serializable {
     // 'cerrar' termina todos los procesos.
     private String            identificador;
     private ArrayList<String> ejecutables;
+<<<<<<< HEAD
     //private static final long serialVersionUID = 42L;
+=======
+    private static final long serialVersionUID = 42L;
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 
     public Token(String id, String comando) throws Exception {
         setID(id);
@@ -50,9 +54,13 @@ class Token implements Serializable {
     }
 
     public String[] getComandos() {
+<<<<<<< HEAD
         String[] comandos = new String[ejecutables.size()];
         comandos = ejecutables.toArray(comandos);
         return comandos;
+=======
+        return (String[])ejecutables.toArray();
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
     }
 
     public String getIdentificador() {

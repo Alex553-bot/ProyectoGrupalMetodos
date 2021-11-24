@@ -2,7 +2,10 @@ package PaqueteListener;
 
 //import PaqueteListener.Serializacion.*;
 import PaqueteListener.Normalizacion.*;
+<<<<<<< HEAD
 import java.io.IOException;
+=======
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 
 import java.util.ArrayList;
 
@@ -16,6 +19,7 @@ public class Main {
         comandos = new ArrayList<>();
     }
     
+<<<<<<< HEAD
     public static void main(String[] args){
         try {
             Process p = Runtime.getRuntime().exec("notepad.exe");
@@ -26,6 +30,11 @@ public class Main {
         Token t = new Token("a", "notepad.exe");
         Hilo h = new Hilo();
         h.run(t.getComandos());
+=======
+    public static void main(String[] args) {
+        Microfono.main(new String[]{""});
+        
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
     }
     
     public String[] capturarComandos(String cadena) {
@@ -54,6 +63,7 @@ public class Main {
     }
     
     public void ejecutar(String id) {
+<<<<<<< HEAD
         boolean band = (!Normalizador.verificar(id));
         int i=0;
         while(i<comandos.size() && band) {
@@ -67,6 +77,15 @@ public class Main {
                 } catch (IOException ioe) {
                     ioe.printStackTrace();
                 }*/
+=======
+        boolean band = (Normalizador.verificar(id));
+        int i=0;
+        while(i<comandos.size() && band) {
+            band =!(id.equals(comandos.get(i).getIdentificador()));
+            if (!band) {
+                Hilo hilo = new Hilo();
+                hilo.run(comandos.get(i).getComandos());
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
             }
             i++;
         }

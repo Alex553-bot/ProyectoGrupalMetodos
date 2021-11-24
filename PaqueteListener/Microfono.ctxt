@@ -1,7 +1,17 @@
 #BlueJ class context
 comment0.target=Microfono
+<<<<<<< HEAD
 comment1.params=re
 comment1.target=void\ resultAccepted(javax.speech.recognition.ResultEvent)
 comment2.params=args
 comment2.target=void\ main(java.lang.String[])
 numComments=3
+=======
+comment1.params=main
+comment1.target=void\ crear(Main)
+comment2.params=re
+comment2.target=void\ resultAccepted(javax.speech.recognition.ResultEvent)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702

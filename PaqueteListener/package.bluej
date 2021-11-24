@@ -1,4 +1,5 @@
 #BlueJ package file
+<<<<<<< HEAD
 dependency1.from=Serializador
 dependency1.to=Token
 dependency1.type=UsesDependency
@@ -28,6 +29,37 @@ objectbench.width=903
 package.divider.horizontal=0.600263852242744
 package.divider.vertical=0.8598562628336756
 package.editor.height=664
+=======
+dependency1.from=Main
+dependency1.to=Token
+dependency1.type=UsesDependency
+dependency2.from=Main
+dependency2.to=Parser
+dependency2.type=UsesDependency
+dependency3.from=Main
+dependency3.to=Serializador
+dependency3.type=UsesDependency
+dependency4.from=Main
+dependency4.to=Hilo
+dependency4.type=UsesDependency
+dependency5.from=Main
+dependency5.to=Microfono
+dependency5.type=UsesDependency
+dependency6.from=Main
+dependency6.to=Diccionario
+dependency6.type=UsesDependency
+dependency7.from=Serializador
+dependency7.to=Token
+dependency7.type=UsesDependency
+dependency8.from=Microfono
+dependency8.to=Main
+dependency8.type=UsesDependency
+objectbench.height=93
+objectbench.width=903
+package.divider.horizontal=0.600263852242744
+package.divider.vertical=0.8714065708418891
+package.editor.height=672
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 package.editor.width=1424
 package.editor.x=0
 package.editor.y=0
@@ -47,27 +79,47 @@ target1.name=Microfono
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=150
+<<<<<<< HEAD
 target1.x=340
 target1.y=170
+=======
+target1.x=50
+target1.y=140
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 target2.height=82
 target2.name=Normalizacion
 target2.type=PackageTarget
 target2.width=120
+<<<<<<< HEAD
 target2.x=40
 target2.y=440
+=======
+target2.x=30
+target2.y=350
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 target3.height=70
 target3.name=Diccionario
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
+<<<<<<< HEAD
 target3.x=860
 target3.y=280
+=======
+target3.x=570
+target3.y=250
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 target4.height=82
 target4.name=RegularExpresion
 target4.type=PackageTarget
 target4.width=140
+<<<<<<< HEAD
 target4.x=170
 target4.y=440
+=======
+target4.x=160
+target4.y=350
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 target5.height=70
 target5.name=Hilo
 target5.showInterface=false
@@ -80,8 +132,13 @@ target6.name=Serializador
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=150
+<<<<<<< HEAD
 target6.x=610
 target6.y=380
+=======
+target6.x=320
+target6.y=350
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 target7.height=70
 target7.name=Token
 target7.showInterface=false
@@ -94,12 +151,22 @@ target8.name=Main
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=120
+<<<<<<< HEAD
 target8.x=720
 target8.y=110
+=======
+target8.x=430
+target8.y=80
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
 target9.height=70
 target9.name=Parser
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
+<<<<<<< HEAD
 target9.x=80
 target9.y=330
+=======
+target9.x=20
+target9.y=240
+>>>>>>> 8342160b91befec94b922aa9d4b2b2f43b741702
